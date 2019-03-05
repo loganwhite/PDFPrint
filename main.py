@@ -38,6 +38,7 @@ def clean_printer(handle):
 
 
 def print_pdf(filename):
+    print "print file: " + filename
     res = win32api.ShellExecute(0, 'print', filename, None, '.', 0)
 
 
